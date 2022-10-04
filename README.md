@@ -2,7 +2,7 @@
 
 # Awesome Books Javascript Project
 
-A basic website that allows you to add and remove books. There has been added styling to match the provided template using Bootstrap. Classes and methods were used in this project instead of objects and arrays. A functional Navbar, footer and a contact page was created. Each nav-item contains an onclick event listener containing a function which enables the user to switch to the corresponding page. Lastly the timestamp below the navbar was added dynamically using Javascript showing the correct date and time.
+A basic website that allows you to add and remove books. There has been added styling to match the provided template using Bootstrap. Classes and methods were used in this project instead of objects and arrays. A functional Navbar, footer and a contact page was created. Each nav-item contains an onclick event listener containing a function which enables the user to switch to the corresponding page. Lastly the timestamp below the navbar was added dynamically using Javascript and imported from a luxon.js file. Script files were divided into modules and were imported to the main index.js file all using ES6 syntax and maintaining the same functionality.
 
 ## Built With
 
