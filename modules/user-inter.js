@@ -15,7 +15,7 @@ export default class UI {
 
   // Adding row to the <tbody>
 
-  static addBookToList(book) {
+  static addBookToList = (book) => {
     const list = document.getElementById('book-list');
 
     const row = document.createElement('tr');
@@ -28,13 +28,13 @@ export default class UI {
     list.appendChild(row);
   }
 
-  static deleteBook(element) {
+  static deleteBook = (element) => {
     if (element.classList.contains('delete')) {
       element.parentElement.parentElement.remove();
     }
   }
 
-  static clearFields() {
+  static clearFields = () => {
     document.querySelector('#title').value = '';
     document.querySelector('#author').value = '';
   }

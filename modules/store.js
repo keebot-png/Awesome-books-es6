@@ -1,6 +1,6 @@
 // Store Class: Handle storage - local storage
 export default class Store {
-  static getBooks() {
+  static getBooks = () => {
     let books;
     if (localStorage.getItem('books') === null) {
       books = [];
@@ -11,13 +11,13 @@ export default class Store {
     return books;
   }
 
-  static addBook(book) {
+  static addBook = (book) => {
     const books = Store.getBooks();
     books.push(book);
     localStorage.setItem('books', JSON.stringify(books));
   }
 
-  static removeBook(index) {
+  static removeBook = (index) => {
     const books = Store.getBooks();
     books.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(books));
