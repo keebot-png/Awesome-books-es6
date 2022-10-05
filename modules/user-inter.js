@@ -3,7 +3,7 @@ import Store from './store.js';
 // UI class: Handle UI tasks e.g. when a book displays on the list or removes from the list
 
 export default class UI {
-  static displayBooks() {
+  static displayBooks = () => {
     const books = Store.getBooks();
 
     // Loop through all of the books in local storage and then add method addBookToList
