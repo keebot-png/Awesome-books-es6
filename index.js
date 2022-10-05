@@ -1,4 +1,4 @@
-import newerBook from "./modules/book.js";
+import Book from "./modules/book.js";
 import UI from "./modules/user-inter.js";
 import Store from "./modules/store.js";
 import { DateTime } from "./modules/luxon.js";
@@ -18,13 +18,13 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
     const author = document.querySelector('#author').value;
   
     // Instatiate book
-    const newestBook = newerBook(title, author);
+    const newbook = new Book(title, author);
   
     // Add book to UI
-    UI.addBookToList(newestBook);
+    UI.addBookToList(newbook);
   
     // Add book to local Storage
-    Store.addBook(newestBook);
+    Store.addBook(newbook);
   
     // Clear fields
     UI.clearFields();
